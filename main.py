@@ -2,19 +2,15 @@ import discord
 import random 
 from discord.ext import commands
 from keep_alive import keep_alive
-# Put bot token between the apostrophes.
 
 Token='MTEyMjQ1NTgyNDMyMTc1NzE4NA.GacxMb.uKR6dcl-eMpTBf6gOQKgJpYD1-LfvuGr5RJk6o'
 
-# Put bot prefix here: it will respond to it...
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
-# IF prefix is blu , the cmd would be blu truth or blu dare.
 
-# Below are Truths, you can add/remove as many you want! Just put a comma after setting each question.
 
 truth_norm = ["When was the last time you told a lie?",
 "What is your biggest fear?",
@@ -144,7 +140,6 @@ truth_norm = ["When was the last time you told a lie?",
 "Have you ever let someone take the blame for something you did? What happened?",
 "Tell us about something really crazy that you were able to get away with."]
 
-# Below are Dares, you can add/remove as many you want! Just put a comma after setting each question.
 
 dare_norm = ["Do a free-style rap for the next minute.",
 "Let another person post a status on your behalf.",
